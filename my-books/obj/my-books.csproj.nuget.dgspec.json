@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stoycho.kostov\\source\\repos\\my-books\\my-books\\my-books.csproj": {}
+    "C:\\Users\\Stoycho\\source\\repos\\web-api-tutorial\\asp-net-core-web-api\\my-books\\my-books.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stoycho.kostov\\source\\repos\\my-books\\my-books\\my-books.csproj": {
+    "C:\\Users\\Stoycho\\source\\repos\\web-api-tutorial\\asp-net-core-web-api\\my-books\\my-books.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stoycho.kostov\\source\\repos\\my-books\\my-books\\my-books.csproj",
+        "projectUniqueName": "C:\\Users\\Stoycho\\source\\repos\\web-api-tutorial\\asp-net-core-web-api\\my-books\\my-books.csproj",
         "projectName": "my-books",
-        "projectPath": "C:\\Users\\stoycho.kostov\\source\\repos\\my-books\\my-books\\my-books.csproj",
-        "packagesPath": "C:\\Users\\stoycho.kostov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stoycho.kostov\\source\\repos\\my-books\\my-books\\obj\\",
+        "projectPath": "C:\\Users\\Stoycho\\source\\repos\\web-api-tutorial\\asp-net-core-web-api\\my-books\\my-books.csproj",
+        "packagesPath": "C:\\Users\\Stoycho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stoycho\\source\\repos\\web-api-tutorial\\asp-net-core-web-api\\my-books\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\stoycho.kostov\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Stoycho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
