@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ef8aec89-33bd-4a66-94dd-a21cfd1bc6ec": {
+      "ProjectGuid": "ef8aec89-33bd-4a66-94dd-a21cfd1bc6ec",
+      "DisplayName": "my-books",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
