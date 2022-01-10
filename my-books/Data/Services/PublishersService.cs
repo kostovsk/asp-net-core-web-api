@@ -62,6 +62,6 @@ namespace my_books.Data.Services
         }
 
         private bool StringStartsWithNumber(string name) => (Regex.IsMatch(name, @"^\d"));
-        }
+        
     }
 }
