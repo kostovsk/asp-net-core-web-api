@@ -2,6 +2,7 @@
 using my_books.Data.ViewModels;
 using my_books.Exceptions;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -14,6 +15,8 @@ namespace my_books.Data.Services
         {
             _context = context;
         }
+
+        public List<Publisher> GetAllPublishers() => _context.Publishers.ToList();
 
         public Publisher AddPublisher(PublisherVM publisher)
         {
