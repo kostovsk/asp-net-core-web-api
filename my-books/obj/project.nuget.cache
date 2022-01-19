@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WCiOWi94h14k90DGg/KUczskGVf5ZYbwWPpCiXjqr3VtuYNda33qx2/BECvTWS4OPFMtNPX55ff5zPIDx+/svw==",
+  "dgSpecHash": "IInQyxz8yG6kYpuFA5BLCQ5Em7z4ta4qY1fwhM/wwoGF4qeWbPLI85gwnu4zXDBnwj2lFoZg1Qsj7zJuYSAgIQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Stoycho\\source\\repos\\web-api-tutorial\\asp-net-core-web-api\\my-books\\my-books.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stoycho\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Stoycho\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Users\\Stoycho\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Stoycho\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Stoycho\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
