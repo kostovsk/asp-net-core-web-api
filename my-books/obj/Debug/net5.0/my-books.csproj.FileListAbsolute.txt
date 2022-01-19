@@ -118,3 +118,4 @@ C:\Users\Stoycho\source\repos\web-api-tutorial\asp-net-core-web-api\my-books\obj
 C:\Users\Stoycho\source\repos\web-api-tutorial\asp-net-core-web-api\my-books\obj\Debug\net5.0\ref\my-books.dll
 C:\Users\Stoycho\source\repos\web-api-tutorial\asp-net-core-web-api\my-books\obj\Debug\net5.0\my-books.pdb
 C:\Users\Stoycho\source\repos\web-api-tutorial\asp-net-core-web-api\my-books\obj\Debug\net5.0\my-books.genruntimeconfig.cache
+C:\Users\Stoycho\source\repos\web-api-tutorial\asp-net-core-web-api\my-books\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
