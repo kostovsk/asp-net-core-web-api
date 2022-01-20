@@ -1,0 +1,2 @@
+01/20/2022 00:01:50 -06:00 [] - Message: This is a test log in GetAllPublishers().
+01/20/2022 00:04:01 -06:00 [Information] - Message: This is a test log in GetAllPublishers().
