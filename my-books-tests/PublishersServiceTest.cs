@@ -30,7 +30,7 @@ namespace my_books_tests
         }
 
         [Test, Order(1)]
-        public void GetAllPublishers_WithNoSortBy_WithNoSearchString_WithNoPageNumber()
+        public void GetAllPublishers_WithNoSortBy_WithNoSearchString_WithNoPageNumber_Test()
         {
             var result = publishersService.GetAllPublishers("", "", null);
 
@@ -38,7 +38,7 @@ namespace my_books_tests
         }
 
         [Test, Order(2)]
-        public void GetAllPublishers_WithNoSortBy_WithNoSearchString_WithPageNumber()
+        public void GetAllPublishers_WithNoSortBy_WithNoSearchString_WithPageNumber_Test()
         {
             var result = publishersService.GetAllPublishers("", "", 2);
 
@@ -46,7 +46,7 @@ namespace my_books_tests
         }
 
         [Test, Order(3)]
-        public void GetAllPublishers_WithNoSortBy_WithSearchString_WithNoPageNumber()
+        public void GetAllPublishers_WithNoSortBy_WithSearchString_WithNoPageNumber_Test()
         {
             var result = publishersService.GetAllPublishers("", "3", null);
 
@@ -55,12 +55,29 @@ namespace my_books_tests
         }
 
         [Test, Order(4)]
-        public void GetAllPublishers_WithSortBy_WithNoSearchString_WithNoPageNumber()
+        public void GetAllPublishers_WithSortBy_WithNoSearchString_WithNoPageNumber_Test()
         {
             var result = publishersService.GetAllPublishers("name_desc", "", null);
 
             Assert.That(result.Count, Is.EqualTo(5));
             Assert.That(result.FirstOrDefault().Name, Is.EqualTo("Publisher 6"));
+        }
+
+        [Test, Order(5)]
+        public void GetPublisherById_WithResponse_Test()
+        {
+            var result = publishersService.GetPublisherById(3);
+
+            Assert.That(result.Id, Is.EqualTo(3));
+            Assert.That(result.Name, Is.EqualTo("Publisher 3"));
+        }
+
+        [Test, Order(6)]
+        public void GetPublisherById_WithoutResponse_Test()
+        {
+            var result = publishersService.GetPublisherById(99);
+
+            Assert.That(result, Is.Null);
         }
 
         [OneTimeTearDown]
