@@ -121,6 +121,18 @@ namespace my_books_tests
             Assert.That(firstBook, Is.EqualTo("Book 1 Title"));
         }
 
+        [Test, Order(10)]
+        public void DeletePublisherById_Test()
+        {
+            var publisherBefore = publishersService.GetPublisherById(1);
+            Assert.That(publisherBefore, Is.Not.Null);
+            Assert.That(publisherBefore.Name, Is.EqualTo("Publisher 1"));
+
+            publishersService.DeletePublisherById(1);
+            var result = publishersService.GetPublisherById(1);
+            Assert.That(result, Is.Null);
+        }
+
 
         [OneTimeTearDown]
         public void CleanUp()
