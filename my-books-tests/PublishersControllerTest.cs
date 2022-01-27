@@ -96,7 +96,7 @@ namespace my_books_tests
         }
 
         [Test, Order(5)]
-        public void HTTPGET_AddPublisher_ReturnBadRequest_Test()
+        public void HTTPPOST_AddPublisher_ReturnBadRequest_Test()
         {
             var newPublisherVM = new PublisherVM()
             {
@@ -104,6 +104,26 @@ namespace my_books_tests
             };
 
             IActionResult actionResult = publishersController.AddPublisher(newPublisherVM);
+
+            Assert.That(actionResult, Is.TypeOf<BadRequestObjectResult>());
+        }
+
+        [Test, Order(6)]
+        public void HTTPDELETE_DeletePublisherById_ReturnOk_Test()
+        {
+            int publisherId = 6;
+
+            IActionResult actionResult = publishersController.DeletePublisherById(publisherId);
+
+            Assert.That(actionResult, Is.TypeOf<OkResult>());
+        }
+
+        [Test, Order(7)]
+        public void HTTPDELETE_DeletePublisherById_ReturnBadRequest_Test()
+        {
+            int publisherId = 6;
+
+            IActionResult actionResult = publishersController.DeletePublisherById(publisherId);
 
             Assert.That(actionResult, Is.TypeOf<BadRequestObjectResult>());
         }
