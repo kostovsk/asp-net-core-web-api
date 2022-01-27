@@ -6,6 +6,7 @@ using my_books.Controllers;
 using my_books.Data;
 using my_books.Data.Models;
 using my_books.Data.Services;
+using my_books.Data.ViewModels;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -79,6 +80,32 @@ namespace my_books_tests
             IActionResult actionResult = publishersController.GetPublisherById(publisherId);
 
             Assert.That(actionResult, Is.TypeOf<NotFoundResult>());
+        }
+
+        [Test, Order(4)]
+        public void HTTPGET_AddPublisher_ReturnCreated_Test()
+        {
+            var newPublisherVM = new PublisherVM()
+            {
+                Name = "New Publisher"
+            };
+
+            IActionResult actionResult = publishersController.AddPublisher(newPublisherVM);
+
+            Assert.That(actionResult, Is.TypeOf<CreatedResult>());
+        }
+
+        [Test, Order(5)]
+        public void HTTPGET_AddPublisher_ReturnBadRequest_Test()
+        {
+            var newPublisherVM = new PublisherVM()
+            {
+                Name = "123 New Publisher"
+            };
+
+            IActionResult actionResult = publishersController.AddPublisher(newPublisherVM);
+
+            Assert.That(actionResult, Is.TypeOf<BadRequestObjectResult>());
         }
 
         [OneTimeTearDown]
